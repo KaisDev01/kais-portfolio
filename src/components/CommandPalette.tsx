@@ -2,7 +2,7 @@ import type React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Search, User, Briefcase, FolderGit2, Cpu, Mail, Download, Copy, Bot, CornerDownLeft } from 'lucide-react'
-import { Github } from './fx'
+import { Github, Linkedin } from './fx'
 import { profile } from '../data'
 
 type Cmd = { label: string; hint: string; icon: (p: { size?: number; className?: string }) => React.ReactNode; run: () => void }
@@ -26,6 +26,7 @@ export default function CommandPalette() {
       { label: 'Copy email address', hint: 'Action', icon: Copy, run: () => { navigator.clipboard?.writeText(profile.email); setToast('Email copied ✓') } },
       { label: 'Download CV', hint: 'Action', icon: Download, run: () => window.open(profile.cv, '_blank') },
       { label: 'Open GitHub', hint: 'Link', icon: Github, run: () => window.open(profile.github, '_blank') },
+      { label: 'Open LinkedIn', hint: 'Link', icon: Linkedin, run: () => window.open(profile.linkedin, '_blank') },
     ],
     [],
   )

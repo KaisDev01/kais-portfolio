@@ -5,7 +5,7 @@ import {
   Brain, Sparkles, Server, LayoutTemplate, Database, GraduationCap, Languages, HeartHandshake, Bot,
 } from 'lucide-react'
 import { profile, stats, experience, projects, skills, marquee, education, languages } from './data'
-import { NeuralCanvas, Cursor, Magnetic, Tilt, Typewriter, Counter, Reveal, SectionTitle, spotlightMove, Github } from './components/fx'
+import { NeuralCanvas, Cursor, Magnetic, Tilt, Typewriter, Counter, Reveal, SectionTitle, spotlightMove, Github, Linkedin } from './components/fx'
 import AgentChat from './components/AgentChat'
 import CommandPalette from './components/CommandPalette'
 import AgentDiagram from './components/AgentDiagram'
@@ -130,6 +130,7 @@ function Hero() {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.05 }} className="mt-8 flex flex-wrap items-center gap-5 text-sm text-zinc-400">
             <span className="flex items-center gap-1.5"><MapPin size={15} className="text-violet-400" /> {profile.location}</span>
             <a href={profile.github} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 transition hover:text-white"><Github size={15} /> GitHub</a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 transition hover:text-white"><Linkedin size={15} /> LinkedIn</a>
             <a href={`mailto:${profile.email}`} className="flex items-center gap-1.5 transition hover:text-white"><Mail size={15} /> Email</a>
           </motion.div>
         </div>
@@ -415,6 +416,7 @@ function Contact() {
           </div>
           <div className="relative mt-8 flex justify-center gap-3">
             <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition hover:-translate-y-1 hover:text-white"><Github size={18} /></a>
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition hover:-translate-y-1 hover:text-white"><Linkedin size={18} /></a>
             <a href={profile.cv} target="_blank" rel="noreferrer" aria-label="Download CV" className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition hover:-translate-y-1 hover:text-white"><Download size={18} /></a>
           </div>
         </div>

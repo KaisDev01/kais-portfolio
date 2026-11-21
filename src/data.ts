@@ -5,6 +5,7 @@ export const profile = {
   location: 'Sofia, Bulgaria',
   email: 'kais.belhadjhassen@gmail.com',
   github: 'https://github.com/KaisDev01',
+  linkedin: 'https://www.linkedin.com/in/kais-ben-hadj-hassen-22355a21b/',
   cv: '/Kais-Ben-Hadj-Hassen-CV.pdf',
   roles: [
     'AI agents with Semantic Kernel',
